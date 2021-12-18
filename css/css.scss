@@ -1,0 +1,18 @@
+@mixin allSize($value){
+    font-size: $value;
+    font-weight: $value;
+    color: $value;
+    line-height: $value;
+    border: $value;
+    border-radius: $value;
+}
+@mixin allDisplay($value){
+    display: $value;
+    align-items: $value;
+    justify-content: $value;
+    flex-wrap: $value;
+    gap: $value;
+}
+.header{
+
+}
