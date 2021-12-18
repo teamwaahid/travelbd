@@ -368,6 +368,189 @@ section{
     }
 }
 
+.blogs .box-container{
+    @include grid(32rem);
+
+    .box{
+        border-radius: 1rem;
+        background: $bg-color;
+        overflow: hidden;
+        &:hover{
+            .image img{
+                transform: scale(1.1);
+            }
+        }
+
+        image{
+            height: 25rem;
+            overflow: hidden;
+            width: 100%;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content{
+            padding: 2rem;
+
+            .link{
+                font-size: 2rem;
+                color: $white;
+                &:hover{
+                    color: $blue;
+                }
+            }
+
+            p{
+                padding: 1rem 0;
+                font-size: 1.4rem;
+                color: $light-color;
+                line-height: 2;
+            }
+            .icon{
+                padding-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a{
+                    font-size: 1.4rem;
+                    color: $light-color;
+                    &:hover{
+                        color: $blue;
+                    }
+
+                    i{
+                        padding-right: .5rem;
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    background: linear-gradient($black-bg, $black-bg), url(../images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    background-attachment: fixed;
+    text-align: center;
+
+    .content{
+        span{
+            font-size: 2rem;
+            color: $blue;
+        }
+        h3{
+            font-size: 4rem;
+            color: $white;
+            margin-top: 1rem;
+        }
+        p{
+            max-width: 60rem;
+            margin: 1rem auto;
+            font-size: 1.4rem;
+            color: $light-color;
+            line-height: 2;
+        }
+    }
+}
+
+.footer{
+    .box-container{
+        @include grid(25rem);
+
+        .box{
+            padding: 1rem 0;
+
+            h3{
+                font-size: 2.2rem;
+                color: $white;
+                padding: 1rem 0;
+            }
+
+            p{
+                font-size: 1.4rem;
+                color: $light-color;
+                padding: 1rem 0;
+                line-height: 2;
+                i{
+                    padding-right: .5rem;
+                    color: $blue;
+                }
+            }
+
+            .share{
+                padding-top: 1rem;
+
+                a{
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4rem;
+                    font-size: 2rem;
+                    border-radius: 50%;
+                    font-size: 1.8rem;
+                    border: $border;
+                    color: $blue;
+                    margin-right: .5rem;
+                    text-align: center;
+
+                    &:hover{
+                        background: $blue;
+                        color: $black;
+                    }
+                }
+            }
+
+            .links{
+                font-size:1.4rem;
+                color:$light-color;
+                padding: 1rem 0;
+                display: block;
+
+                &:hover{
+                    color: $blue;
+                    i{
+                        padding-right: 2rem;
+                    }
+                }
+                i{
+                    padding-right: .5rem;
+                    color: $blue;
+                }
+            }
+
+            form .email{
+                width: 100%;
+                border-radius: 5rem;
+                border: $border;
+                background: none;
+                font-size: 1.5rem;
+                text-transform: none;
+                color: $light-color;
+                margin-bottom: 1.2rem;
+                padding: 1.2rem 1.4rem;
+            }
+        }
+    }
+}
+
+.credit{
+    background: $bg-color;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    color: $light-color;
+
+    span{
+        color: $blue;
+    }
+}
 
 
 
@@ -430,5 +613,9 @@ section{
 
     .about .content h3{
         font-size: 3.5rem;
+    }
+
+    .banner .content h3{
+        font-size: 2.7rem;
     }
 }
